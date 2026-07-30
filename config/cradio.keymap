@@ -85,7 +85,7 @@
 
         esc {
             bindings = <&kp ESCAPE>;
-            key-positions = <13 13 12>;
+            key-positions = <22 23>;
             layers = <0>;
         };
 
@@ -108,8 +108,8 @@
         };
 
         yo {
-            bindings = <&kp TILDE>;
-            key-positions = <3 4>;
+            bindings = <&kp GRAVE>;
+            key-positions = <3 2>;
         };
 
         x {

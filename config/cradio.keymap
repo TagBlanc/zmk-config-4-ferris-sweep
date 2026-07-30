@@ -91,19 +91,19 @@
 
         backspace {
             bindings = <&kp BACKSPACE>;
-            key-positions = <16 17>;
+            key-positions = <7 6>;
             layers = <0>;
         };
 
         return {
             bindings = <&kp RETURN>;
-            key-positions = <26 27>;
+            key-positions = <16 17>;
             layers = <0>;
         };
 
         delete {
             bindings = <&kp DELETE>;
-            key-positions = <6 7>;
+            key-positions = <27 26>;
             layers = <0>;
         };
     };
@@ -121,22 +121,31 @@
             >;
         };
 
-        sym {
+        NUM {
             bindings = <
-&kp N1  &kp N2     &kp N3    &kp N4    &kp N5     &kp N6   &kp N7    &kp N8    &kp N9     &kp N0
-&none   &kp LCTRL  &kp LALT  &kp LGUI  &kp F11    &kp F12  &kp RGUI  &kp RALT  &kp RCTRL  &none
-&kp F1  &kp F2     &kp F3    &kp F4    &kp F5     &kp F6   &kp F7    &kp F8    &kp F9     &kp F10
-                             &none     &none      &none    &none
+&kp N1   &kp N2     &kp N3    &kp N4    &kp N5     &kp N6    &kp N7     &kp N8    &kp N9     &kp N0
+&kp TAB  &kp LCTRL  &kp LALT  &kp LGUI  &kp F11    &kp F12   &kp RGUI   &kp RALT  &kp RCTRL  &tog 2
+&kp F1   &kp F2     &kp F3    &kp F4    &kp F5     &kp F6    &kp F7     &kp F8    &kp F9     &kp F10
+                              &none     &none      &kp LEFT  &kp RIGHT
             >;
         };
 
         mouse {
             display-name = "MOUSE";
             bindings = <
-&tog 2  &mkp MB4  &mkp MCLK  &mkp MB5   &trans        &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &tog 2
-&trans  &trans    &trans     &trans     &trans        &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &trans
-&trans  &trans    &trans     &trans     &trans        &trans          &mkp MB4        &mkp MCLK     &mkp MB5         &trans
+&tog 2  &mkp MB4  &mkp MCLK  &mkp MB5   &none         &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &tog 2
+&none   &none     &kp LEFT   &kp RIGHT  &none         &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &kp LCTRL
+&none   &none     &none      &none      &none         &none           &mkp MB4        &mkp MCLK     &mkp MB5         &none
                              &kp SPACE  &kp LSHIFT    &mkp LCLK       &mkp RCLK
+            >;
+        };
+
+        SYM {
+            bindings = <
+&kp EXCL          &kp AT             &kp HASH       &kp DOLLAR  &kp PERCENT    &kp CARET  &kp AMPERSAND     &kp STAR           &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
+&kp TILDE         &kp GRAVE          &kp BACKSLASH  &kp PIPE    &kp MINUS      &kp PLUS   &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp LEFT_BRACE        &kp RIGHT_BRACE
+&kp LEFT_BRACKET  &kp RIGHT_BRACKET  &none          &none       &kp EQUAL      &kp UNDER  &kp LEFT_ARROW    &kp DOWN_ARROW     &kp UP_ARROW          &kp RIGHT
+                                                    &none       &none          &none      &none
             >;
         };
     };

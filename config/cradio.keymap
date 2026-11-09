@@ -158,8 +158,8 @@
         SYM {
             bindings = <
 &kp EXCL          &kp AT             &kp HASH       &kp DOLLAR  &kp PERCENT    &kp CARET  &kp AMPERSAND     &kp STAR           &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
-&kp TILDE         &kp GRAVE          &kp BACKSLASH  &kp PIPE    &kp MINUS      &kp PLUS   &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp LEFT_BRACE        &kp RIGHT_BRACE
-&kp LEFT_BRACKET  &kp RIGHT_BRACKET  &none          &none       &kp EQUAL      &kp UNDER  &kp LEFT_ARROW    &kp DOWN_ARROW     &kp UP_ARROW          &kp RIGHT
+&kp TILDE         &kp GRAVE          &kp BACKSLASH  &kp PIPE    &kp MINUS      &kp UNDER  &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp LEFT_BRACE        &kp RIGHT_BRACE
+&kp LEFT_BRACKET  &kp RIGHT_BRACKET  &none          &none       &kp EQUAL      &kp PLUS   &kp LEFT_ARROW    &kp DOWN_ARROW     &kp UP_ARROW          &kp RIGHT
                                                     &none       &none          &none      &none
             >;
         };
